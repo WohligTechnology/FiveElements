@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Luq-MG-Git">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FiveElements" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tnt-cX-Ujj"/>
+                        <viewControllerLayoutGuide type="bottom" id="ftH-bX-xxq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="243.49999999999994"/>
+        </scene>
+        <!--Check Box View-->
+        <scene sceneID="idT-eg-RrW">
+            <objects>
+                <viewController id="4Bo-zF-7C7" customClass="CheckBoxView" customModule="FiveElements" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yw7-WW-q1a"/>
+                        <viewControllerLayoutGuide type="bottom" id="qDB-Rd-D5G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0ef-5e-rtu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QBh-bh-MKA" customClass="CurveView" customModule="FiveElements" customModuleProvider="target">
+                                <rect key="frame" x="20" y="48" width="280" height="320"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wO-X0-3fK">
+                                <rect key="frame" x="43" y="409" width="39" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Erase"/>
+                                <connections>
+                                    <action selector="eraseNow:" destination="4Bo-zF-7C7" eventType="touchUpInside" id="W4C-fc-ss5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HM-rJ-Z6V">
+                                <rect key="frame" x="134" y="409" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="4Bo-zF-7C7" eventType="touchUpInside" id="JOe-XP-wRu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1t-t1-Pio">
+                                <rect key="frame" x="231" y="409" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Thick"/>
+                                <connections>
+                                    <action selector="changeWidth:" destination="4Bo-zF-7C7" eventType="touchUpInside" id="Rg8-zb-51i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAw-01-Xou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="912"/>
+        </scene>
+        <!--Audio Controller-->
+        <scene sceneID="5cG-fU-UhL">
+            <objects>
+                <viewController id="Luq-MG-Git" customClass="AudioController" customModule="FiveElements" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fjA-re-cES"/>
+                        <viewControllerLayoutGuide type="bottom" id="SiZ-bC-GO8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ten-Cc-R7M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yot-tZ-4we">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <animations/>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Yot-tZ-4we" secondAttribute="trailing" id="4ga-nw-qZZ"/>
+                            <constraint firstItem="Yot-tZ-4we" firstAttribute="bottom" secondItem="SiZ-bC-GO8" secondAttribute="top" id="Hkg-RL-elv"/>
+                            <constraint firstItem="Yot-tZ-4we" firstAttribute="top" secondItem="Ten-Cc-R7M" secondAttribute="top" id="fpG-mc-Qk0"/>
+                            <constraint firstItem="Yot-tZ-4we" firstAttribute="leading" secondItem="Ten-Cc-R7M" secondAttribute="leading" id="zzZ-4j-9Cb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="ScrView" destination="Yot-tZ-4we" id="Tq1-5Y-ieO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACt-Ba-mM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="1496"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ofc-aw-QL2">
+            <objects>
+                <viewController id="2QI-nC-uzf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="crT-ei-ewf"/>
+                        <viewControllerLayoutGuide type="bottom" id="KEo-FL-NO6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uLp-mJ-myk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ko0-Ac-5jL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="860.38732394366195"/>
+        </scene>
+    </scenes>
+</document>

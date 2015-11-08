@@ -1,0 +1,13 @@
+PODS:
+  - PureLayout (3.0.1)
+  - RichEditorView (2.0.1)
+
+DEPENDENCIES:
+  - PureLayout
+  - RichEditorView
+
+SPEC CHECKSUMS:
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  RichEditorView: 1606b9b3e02afe3ccd0de0d8fa3ddb55247e868f
+
+COCOAPODS: 0.39.0
